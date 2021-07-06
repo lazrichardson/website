@@ -1,29 +1,118 @@
 <!doctype html>
 <html lang="en">
+<style>
+  .flex-container {
+    display: flex;
+    flex-flow: row;
+  }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  * {
+    margin: 10px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: underline;
+    padding:3px;
+  }
+
+  a:link{
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: underline;
+  }
+
+  a:visited{
+      color: rgba(0, 0, 0, 0.6);
+  }
+
+  a:hover{
+      background: linear-gradient(#eee, #eee);
+      background-size: auto 4em;
+      background-repeat: no-repeat;
+      background-position: 0% 15px; 
+      text-decoration: underline;
+  }
+
+  body {
+    font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+  }
+
+  h1 {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+  }
+
+  ul {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", Arial, sans-serif;
+  }
+
+  li {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+</style>
+
 <body>
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Internal CSS -->
-      <link rel="stylesheet" href="css/style2.css">
       <title>Luther Richardson</title>
   </head>
     <main>
       <!-- Header -->
-      <div>
+      <div class="flex-container">
+        <div>
         <h1>Luther Richardson</h1>
-      </div>
+        </div>
       <!-- About -->
-      <div>
-        <p>I'm finishing a MS in software development at Boston University in the NYC area.</p>
-        <p>My passion is building exceptional products. Previously, I spent 5+ years at Radius Bank (later LendingClub) where I lead product for banking as a service and app/online banking platforms along with customer engagement for consumer and small businesses.</p> 
-        <p>Outside work I'm busy practicing photography, eating my way through the city, or traveling somewhere new.</p>
-      </div>
+        <div>
+          <p>I'm finishing a MS in software development at Boston University in the NYC area.</p>
+          <p>My passion is building exceptional products. Previously, I spent 5+ years at Radius Bank (later LendingClub) where I lead product for banking as a service and app/online banking platforms along with customer engagement for consumer and small businesses.</p> 
+          <p>Outside work I'm busy practicing photography, eating my way through the city, or traveling somewhere new.</p>
+        </div>
       <!-- Links -->
-      <div>
-        <a href="https://www.linkedin.com/in/lutherrichardson/">LinkedIn</a><br>
-        <a href="mailto:l@lutherrichardson.com">Email</a><br>
-        <a href="https://github.com/lazrichardson">Github</a><br>
+        <div>
+          <a href="https://www.linkedin.com/in/lutherrichardson/">LinkedIn</a><br>
+          <a href="mailto:l@lutherrichardson.com">Email</a><br>
+          <a href="https://github.com/lazrichardson">Github</a><br>
+          <a href="https://500px.com/p/lazrichardson">Photography</a><br>
+          <a href="https://www.instagram.com/__.__luther__.__/">Instagram</a><br>
+        </div>
       </div>
     </main>
   </body>
