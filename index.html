@@ -1,68 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
-<script>
+<head>
+    <title>Luther Liang's Website</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <script>
 
-  const EVENTS = {
-    DOM_LOADED: "DOMContentLoaded",
-    CLICK: "click"};
-
-
-window.addEventListener(EVENTS.DOM_LOADED, () => {
-
-  let url = ""
-
-    document.getElementById("radio4").addEventListener(EVENTS.CLICK, () => {
-        url = "https://www.linkedin.com/in/lutherrichardson/";
-        document.getElementById("radio5").checked = false;
-        document.getElementById("radio6").checked = false;
-    });
-    document.getElementById("radio5").addEventListener(EVENTS.CLICK, () => {
-      url = "https://github.com/lazrichardson";
-      document.getElementById("radio4").checked = false;
-      document.getElementById("radio6").checked = false;
-    });
-    document.getElementById("radio6").addEventListener(EVENTS.CLICK, () => {
-      url = "https://500px.com/p/lazrichardson";
-      document.getElementById("radio4").checked = false;
-      document.getElementById("radio5").checked = false;
-    });
-    document.getElementById("ok_button").addEventListener(EVENTS.CLICK, () => {
-      window.location = url;
-    });
-});
-</script>
+        const EVENTS = {
+          DOM_LOADED: "DOMContentLoaded",
+          CLICK: "click"};
+      
+      
+      window.addEventListener(EVENTS.DOM_LOADED, () => {
+      
+        let url = ""
+      
+          document.getElementById("radio4").addEventListener(EVENTS.CLICK, () => {
+              url = "https://www.linkedin.com/in/lutherrichardson/";
+              document.getElementById("radio5").checked = false;
+              document.getElementById("radio6").checked = false;
+          });
+          document.getElementById("radio5").addEventListener(EVENTS.CLICK, () => {
+            url = "https://github.com/lazrichardson";
+            document.getElementById("radio4").checked = false;
+            document.getElementById("radio6").checked = false;
+          });
+          document.getElementById("radio6").addEventListener(EVENTS.CLICK, () => {
+            url = "https://500px.com/p/lazrichardson";
+            document.getElementById("radio4").checked = false;
+            document.getElementById("radio5").checked = false;
+          });
+          document.getElementById("ok_button").addEventListener(EVENTS.CLICK, () => {
+            window.location = url;
+          });
+      });
+      </script>
+</head>
 <body>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Luther Liang's Personal Website</title>
-  </head>
-    <main>
-      <div class="modal-dialog outer-border" style="width: 30rem;">
-        <div class="inner-border center">
-          <div class="modal-contents">
-            <h1 class="modal-text">Luther Liang</h1>
-            <div style="padding-left: 20px;">
-              <div class="field-row">
-                <input id="radio4" type="radio" name="linkedin_radio">
-                <label for="radio4">LinkedIn</label>
-              </div>
-              <div class="field-row">
-                <input id="radio5" type="radio" name="github_radio">
-                <label for="radio5">GitHub</label>
-              </div>
-              <div class="field-row">
-                <input id="radio6" type="radio" name="photo_radio">
-                <label for="radio6">Photography</label>
-              </div>
-            </div>
-            <section class="field-row" style="justify-content: flex-end">
-              <button class="btn" style="width:95px;" id="ok_button">OK</button>
-            </section>
-          </div>
+    <div class="window" style="width:30rem;">
+        <div class="title-bar"> 
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Luther Liang's Website</h1>
+            <button aria-label="Resize" class="resize"></button>
         </div>
-      </div>
-    </main>
-  </body>
+        <div class="separator"></div>
+        <div class="window-pane">
+            Welcome to my personal website! Make your selection below.<br>
+            <br>
+                 
+                    <div style="padding-left: 20px;">
+                      <div class="field-row">
+                        <input id="radio4" type="radio" name="linkedin_radio">
+                        <label for="radio4">LinkedIn</label>
+                      </div>
+                      <div class="field-row">
+                        <input id="radio5" type="radio" name="github_radio">
+                        <label for="radio5">GitHub</label>
+                      </div>
+                      <div class="field-row">
+                        <input id="radio6" type="radio" name="photo_radio">
+                        <label for="radio6">Photography</label>
+                      </div>
+                    </div>
+                    <section class="field-row" style="justify-content: flex-end">
+                      <button class="btn" style="width:95px;" id="ok_button">OK</button>
+                    </section>
+
+              
+
+        </div>
+    </div>
+</body>
 </html>
