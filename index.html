@@ -39,9 +39,15 @@
             document.getElementById("radio6").checked = false;
           });
           document.getElementById("radio6").addEventListener(EVENTS.CLICK, () => {
-            url = "https://glass.photo/lliang";
+            url = "https://latentlight.substack.com";
             document.getElementById("radio4").checked = false;
             document.getElementById("radio5").checked = false;
+          });
+           document.getElementById("radio7").addEventListener(EVENTS.CLICK, () => {
+            url = "https://lazr.myportfolio.com";
+            document.getElementById("radio4").checked = false;
+            document.getElementById("radio5").checked = false;
+            document.getElementById("radio6").checked = false;
           });
           document.getElementById("ok_button").addEventListener(EVENTS.CLICK, () => {
             window.location = url;
@@ -72,15 +78,17 @@
                       </div>
                       <div class="field-row">
                         <input id="radio6" type="radio" name="photo_radio">
-                        <label for="radio6">Photography</label>
+                        <label for="radio6">Writing</label>
+                      </div>
+                      </div>
+                      <div class="field-row">
+                        <input id="radio7" type="radio" name="photo_radio">
+                        <label for="radio7">Photography Portfolio</label>
                       </div>
                     </div>
                     <section class="field-row" style="justify-content: flex-end">
                       <button class="btn" style="width:95px;" id="ok_button">OK</button>
                     </section>
-
-              
-
         </div>
     </div>
 </body>
